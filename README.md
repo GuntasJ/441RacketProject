@@ -97,26 +97,26 @@ I used Chat GPT for some prompts. The prompts are listed down below:
 
 > in that example, how can i extract the message from the error
 
-> For the following grammar, generate some statements that follow it.
-> program -> linelist $$
-> linelist -> line linelist | epsilon
-> line -> label stmt linetail
-> label -> id: | epsilon
-> linetail -> stmt+ | epsilon
-> stmt -> id = expr;
-> | if (boolean) stmt;
-> | while (boolean) linelist endwhile;
-> | read id;
-> | write expr;
-> | goto id;
-> | gosub id;
-> | return;
-> | break;
-> | end;
-> boolean -> true | false | expr bool-op expr
-> bool-op -> < | > | >= | <= | <> | =
-> expr -> id etail | num etail | (expr)
-> etail -> + expr | - expr | * expr | / expr | epsilon
-> id -> [a-zA-Z][a-zA-Z0-9]*
-> num -> numsign digit digit*
-> numsign -> + | - | epsilon
+> For the following grammar, generate some statements that follow it.  
+> program -> linelist $$  
+> linelist -> line linelist | epsilon  
+> line -> label stmt linetail  
+> label -> id: | epsilon  
+> linetail -> stmt+ | epsilon  
+> stmt -> id = expr;  
+> | if (boolean) stmt;  
+> | while (boolean) linelist endwhile;  
+> | read id;  
+> | write expr;  
+> | goto id;  
+> | gosub id;  
+> | return;  
+> | break;  
+> | end;  
+> boolean -> true | false | expr bool-op expr  
+> bool-op -> < | > | >= | <= | <> | =  
+> expr -> id etail | num etail | (expr)  
+> etail -> + expr | - expr | * expr | / expr | epsilon  
+> id -> [a-zA-Z][a-zA-Z0-9]*  
+> num -> numsign digit digit*  
+> numsign -> + | - | epsilon  
