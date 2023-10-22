@@ -1,8 +1,7 @@
 # 441RacketProject 
 UMKC 441 
 # Introduction
-This project is a parser checker for the given grammar that was assigned. It reads in a file, and outputs if that file's contents followed the rules of the grammar or not. If not, it also provides the line where the error occured. 
-# Sources
+This project is a parser checker for the given grammar that was assigned. It reads in a file, and outputs if that file's contents followed the rules of the grammar or not. If not, it also provides the line where the error occured. The test files in there are for checking the parsing. Some of the codexxx files are wrong.
 There were several key sources that helped me build this parser.
 
 This detailed on how to build a lexer to make the parsing much easier
