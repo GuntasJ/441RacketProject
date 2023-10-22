@@ -538,7 +538,7 @@ stmt -> id = expr;
 ;This is the curent directory of my project. When running the code, simply change it to the current directory of the machine that is running it.
 (current-directory "/Users/guntasjammu/Desktop/441-Racket-Project")
 
-(parse "code011.txt")
+;(parse "code011.txt")
 
 
   
