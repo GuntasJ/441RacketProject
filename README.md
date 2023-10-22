@@ -88,3 +88,35 @@ This is valid code. As long as the semi colon is following the end of the expres
 
 
 In here, the linex statements are just to show the lines. They are not part of the code. In this code, the error would be on line 5, as the program expected a semi-colon there but instead got a $$. 
+
+
+# Use of Generative AI
+I used Chat GPT for some prompts. The prompts are listed down below:
+
+> what function in racket gets an errors message
+
+> in that example, how can i extract the message from the error
+
+> For the following grammar, generate some statements that follow it.
+> program -> linelist $$
+> linelist -> line linelist | epsilon
+> line -> label stmt linetail
+> label -> id: | epsilon
+> linetail -> stmt+ | epsilon
+> stmt -> id = expr;
+> | if (boolean) stmt;
+> | while (boolean) linelist endwhile;
+> | read id;
+> | write expr;
+> | goto id;
+> | gosub id;
+> | return;
+> | break;
+> | end;
+> boolean -> true | false | expr bool-op expr
+> bool-op -> < | > | >= | <= | <> | =
+> expr -> id etail | num etail | (expr)
+> etail -> + expr | - expr | * expr | / expr | epsilon
+> id -> [a-zA-Z][a-zA-Z0-9]*
+> num -> numsign digit digit*
+> numsign -> + | - | epsilon
