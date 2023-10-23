@@ -95,7 +95,11 @@ I used Chat GPT for some prompts. The prompts are listed down below:
 
 > what function in racket gets an errors message
 
+This was used as part of the final step in completing the project. I wanted to know how to get the message from the error, as I could not find it in the documentation. 
+
 > in that example, how can i extract the message from the error
+
+This is a follow up question to clarify the original. 
 
 > For the following grammar, generate some statements that follow it.  
 > program -> linelist $$  
@@ -119,4 +123,6 @@ I used Chat GPT for some prompts. The prompts are listed down below:
 > etail -> + expr | - expr | * expr | / expr | epsilon  
 > id -> [a-zA-Z][a-zA-Z0-9]*  
 > num -> numsign digit digit*  
-> numsign -> + | - | epsilon  
+> numsign -> + | - | epsilon
+
+This was to generate some test code for the parser. I manually checked each one that was generated. It produced some correct and some incorrect code to test against.
