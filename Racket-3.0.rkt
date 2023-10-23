@@ -153,6 +153,7 @@
 ;This section of the code is to make chcekers for all of the tokens listed above. This is done so we do not have to work with #true or #false, only success and failure
 ;Strictly speaking, this code is not needed. The reason why it was used is that it makes the code below in the parsing much cleaner and easier to read. This allows for better debugging
 ;The empty check if a chain of functions are being passed or for end of list when it is not correct. This will ensure that it will return failure rather than a random error
+;Some functinos have a -e attached to them. This signifies that they throw an error rather than return a failure
 ;//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 (define ($$? token-list)
   (cond
